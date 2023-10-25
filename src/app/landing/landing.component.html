@@ -1,0 +1,555 @@
+<!--top nav start-->
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="top-header">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#"><img src="assets/images/landing/PB_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="main-menu m-x-auto" id="nav">
+                        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#scroll-spy" aria-controls="scroll-spy" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="scroll-spy">
+                                <ul class="navbar-nav mx-auto nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" #home (click)="active('home')" [ngClass]="{'active show': activeClass == 'home' }">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('about')" [ngClass]="{'active show': activeClass == 'about' }" >About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('features')" [ngClass]="{'active show': activeClass == 'features' }">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('portfolio')" [ngClass]="{'active show': activeClass == 'portfolio' }">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('contact')" [ngClass]="{'active show': activeClass == 'contact' }">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="purchase-block">
+                        <span class="cartpurchase"><i class="fa fa-phone"></i></span>
+                        <a class="purchase-btn" href="https://themeforest.net/user/pixelstrap/portfolio">Let's talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--top nav end-->
+
+<!--header start-->
+<section class="agency header" id="home">
+    <div class="agency bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="center-text">
+                        <div>
+                            <div class="header-text">
+                                <h1 class="text-uppercase"><span class="bold-text">Grow your business by hiring us</span></h1>
+                            </div>
+                            <div class="header-sub-text">
+                                <p>We turn your dreams into reality. Embrace innovation, elevate your online presence, and see your business flourish. Hire us now for extraordinary results!</p>
+                            </div>
+                            <div class="link-horizontal">
+                                <ul>
+                                    <li>
+                                        <a class=" btn btn-default btn-gradient text-white" (click)="active('contact')" [ngClass]="{'active show': activeClass == 'contact' }">Get Started</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a class="btn btn-default btn-gradient text-white active">start now</a>
+                                    </li> -->
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="set-abs abs-horizon-center girl-boy">
+        <img src="assets/images/agency/slider/img.png" alt="" class="img-fluid"  data-tilt data-tilt-max="5" data-tilt-perspective="500"
+        data-tilt-speed="400">
+        <div class="plus-container plus-container6">
+            <div class="plus">
+            </div>
+        </div>
+        <div class="plus-container plus-container7">
+            <div class="plus">
+            </div>
+        </div>
+        <div class="plus-container plus-container8">
+            <div class="plus">
+            </div>
+        </div>
+        <div class="circle-container">
+            <div class="gradient-circle-big">
+            </div>
+        </div>
+        <div class="circle-container small">
+            <div class="gradient-circle-small">
+            </div>
+        </div>
+    </div>
+    <div class="plus-container">
+        <div class="plus">
+        </div>
+    </div>
+    <div class="plus-container plus-container2">
+        <div class="plus plus-medium">
+        </div>
+    </div>
+    <div class="plus-container plus-container3">
+        <div class="plus plus-small">
+        </div>
+    </div>
+    <div class="plus-container plus-container4">
+        <div class="plus plus-small">
+        </div>
+    </div>
+    <div class="plus-container plus-container5">
+        <div class="plus plus-medium">
+        </div>
+    </div>
+</section>
+<!--header end-->
+
+<!--service section start-->
+<section class="app1 services bg" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center main-text m-b-0">What can we do for you?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service service-overlay text-center" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
+                     data-tilt-perspective="500"
+                     style="will-change: transform; transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                    <div class="img-block">
+                        <img src="assets/images/agency/service/ui.png" alt="" class="service-img img-fluid">
+                    </div>
+                    <div class="service-feature">
+                        <h4 class="feature-text text-center">Creative Design</h4>
+                        <p>Innovative thinking, fresh ideas, and standout site with conceptual solutions to communicate ideas are our expertise.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service service-overlay text-center" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
+                     data-tilt-perspective="500"
+                     style="will-change: transform; transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                    <div class="img-block">
+                        <img src="assets/images/agency/service/dev.png" alt="" class="service-img img-fluid">
+                    </div>
+                    <div class="service-feature">
+                        <h4 class="feature-text text-center">Development</h4>
+                        <p>Transforming your concepts into reality and delivering exceptional experiences requires technical expertise.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service service-overlay text-center" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
+                     data-tilt-perspective="500"
+                     style="will-change: transform; transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                    <div class="img-block">
+                        <img src="assets/images/agency/service/social.png" alt="" class="service-img img-fluid">
+                    </div>
+                    <div class="service-feature">
+                        <h4 class="feature-text text-center">Marketing</h4>
+                        <p>Exceptional websites thrive on robust traffic for impactful outcomes. Elevating prospect traffic is our top priority.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--service section end-->
+
+<!--portfolio start-->
+<section class="portfolio-section" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2>portfolio</h2>
+                    <hr class="bottom-border">
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="portfolioOptions" class="ecommerce-home-slider">
+                    <ng-container *ngFor="let data of portfolio">
+                        <ng-template carouselSlide>
+                            <div>
+                                <a [routerLink]="data.link" target="_blank">
+                                    <div class="port-img">
+                                        <img [src]="data.img" class="img-fluid">
+                                    </div>
+                                </a>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+    <div class="animat-potfolio">
+        <img src="assets/images/landing/animate-icon/sib-1.png" class="img-fluid port-sib">
+        <img src="assets/images/landing/animate-icon/round-2.png" class="img-fluid port-round">
+        <img src="assets/images/landing/animate-icon/ract.png" class="img-fluid port-ract">
+        <img src="assets/images/landing/animate-icon/squar.png" class="img-fluid port-squar">
+    </div>
+</section>
+<!--portfolio end-->
+
+<!-- about section Start-->
+<section class="gym format" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="center-text">
+                    <div class="text-center">
+                        <div class="format-head-text">
+                            <h3 class="about-font-header gradient-text">about us</h3>
+                        </div>
+                        <div class="format-sub-text mb-0">
+                            <p class="p-light about-para">
+                                Welcome to Pixiebot Design Studio, where design meets innovation and creativity knows no bounds. We are not just another design agency; we are the embodiment of passion, expertise, and a vision for excellence.We are a proudly women-owned UX-UI design agency, with 12+ years of experience and a shared passion for design, we have embarked on a journey to make our mark in the ever-evolving world of digital experiences. </p>
+                        </div><br><br>
+                        <a href="#" class=" btn btn-default btn-gradient text-white">view more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end-->
+
+<!-- Progress bar start -->
+<section class="resume about bg-light-inner">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="font-primary borders text-center main-text text-uppercase m-b-0"><span>progress 2</span></h2>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center radial">
+                    <div data-label="98%" class="radial-bar radial-bar-primary">
+                    </div>
+                    <h4 class="color-light m-t-15">UI/UX Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center radial">
+                    <div data-label="90%" class="radial-bar radial-bar-primary radial-90">
+                    </div>
+                    <h4 class="color-light m-t-15">Development</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center radial">
+                    <div data-label="80%" class="radial-bar radial-bar-primary radial-80">
+                    </div>
+                    <h4 class="color-light m-t-15">Branding</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-center radial">
+                    <div data-label="70%" class="radial-bar radial-bar-primary radial-70">
+                    </div>
+                    <h4 class="color-light m-t-15">Content Writing</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Progress bar end -->
+
+<!-- testimonial section start-->
+<section class="agency testimonial format testimonial-bg" [ngStyle]="{'background-image': 'url(assets/images/agency/testimonial/bg.png)'}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="format-container m-b-50">
+                    <h6 class="borders-before">
+                        <span>Happy Clients</span>
+                    </h6>
+                    <div class="format-head-text">
+                        <h2 class=" text-white">Clients Review
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <owl-carousel-o [options]="testimonialCarouselOptions" class="testimonial-slider">
+                    <ng-container *ngFor="let user of users">
+                        <ng-template carouselSlide class="item">
+                            <div class="testimonial-container testimonial-container2 m-0">
+                                <div class="d-flex">
+                                    <img [src]="user.img" alt="" class="img-fluid m-r-25">
+                                    <div class="center-content">
+                                        <h6 class="name">{{user.name}}</h6>
+                                        <h6 class="post font-primary">{{user.designation}}</h6>
+                                    </div>
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="m-b-20 para2">{{user.review}}</p>
+                                    <div class="primary-border"></div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial section end-->
+
+<!-- Contact form start -->
+<section class=" bg-light-inner" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title title2 title-inner">
+                    <div class="main-title">
+                        <h2 class="borders text-center main-text m-b-0">Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <div class="center-text test">
+                    <div class="text-center">
+                        <div class="format-sub-text mb-0">
+                            <p class="p-light about-para">
+                                Curious about our business solutions? Reach out today! For urgent assistance,<br> dial <span class="contact-num">+1(925)-587-4330</span> to speak with us directly and get immediate help. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="music bg-footer">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-sm-4">
+                <div class="contact-details text-center">
+                    <h4 class="contact-heading  ">Address</h4>
+                    <h6 class="contact-sub-text ">Dublin, CA</h6>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="contact-details text-center">
+                    <h4 class="contact-heading  ">Call Us </h4>
+                    <h6 class="contact-sub-text">(925)-587-4330</h6>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="contact-details text-center">
+                    <h4 class="contact-heading ">Email Us</h4>
+                    <h6 class="contact-sub-text">pixiebotdesign@gmail.com</h6>
+                </div>
+            </div>
+        </div> -->
+        <div class="form form-footer p-t-50">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <select name="country" id="country">
+                            <option value="" disabled selected>Select Country</option>
+                            <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <select name="service" id="serviceType">
+                            <option value="" disabled selected>Select service</option>
+                            <option *ngFor="let service of services" [value]="service.name">{{service.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="6" placeholder="Please provide details about your project, including description and timeline."></textarea>
+                    </div>
+                </div>
+                <div class="booking">
+                    <a href="#" class=" btn btn-default btn-gradient text-white">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+<!-- Contact form end -->
+<!-- footer start -->
+<footer class="app2 bg footer2 p-0">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="logo-sec">
+                        <div class="footer-title mobile-title p-t-0">
+                            <h3>About Us</h3>
+                        </div>
+                        <div class="footer-contant">
+                            <img alt="" class="img-fluid footer-logo" src="assets/images/landing/PB_logo.png">
+                            <div class="footer-para">
+                                <p>A creative haven where ideas come to life: our design studio crafts innovative concepts and visually stunning solutions, transforming visions into reality.</p>
+                            </div>
+                            <ul class="d-flex footer-social social">
+                                <li class="footer-social-list">
+                                    <a href="https://www.facebook.com/PixiebotDesignStudio"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="footer-social-list">
+                                    <a href="https://www.linkedin.com/in/pixiebot-design-studio-789464255/"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li class="footer-social-list">
+                                    <a href="https://www.instagram.com/thepixiebot/"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-title mobile-title">
+                        <h3>Post Tags</h3>
+                    </div>
+                    <div class="footer-contant">
+                        <h5 class="footer-headings">Post Tags</h5>
+                        <div class="link-btns">
+                            <ul>
+                                <li class="buttons">
+                                    <a href="#">app</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">business</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">corporation</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">creative</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">design</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">fashion</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">food</a>
+                                </li>
+                                <li class="buttons">
+                                    <a href="#">mobile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="footer-title mobile-title">
+                        <h3 class="text-white">blog categories</h3>
+                    </div>
+                    <div class="footer-contant">
+                        <h5 class="footer-headings">Blog Categories</h5>
+                        <div>
+                            <ul class="footer-lists">
+                                <li>
+                                    <a href="#">App Review</a>
+                                </li>
+                                <li>
+                                    <a href="#">Audio Post</a>
+                                </li>
+                                <li>
+                                    <a href="#">Default Post</a>
+                                </li>
+                                <li>
+                                    <a href="#">Uncategorized</a>
+                                </li>
+                                <li>
+                                    <a href="#">Video Post</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="footer-title mobile-title">
+                        <h3>Contact Info</h3>
+                    </div>
+                    <div class="footer-contant">
+                        <h5 class="footer-headings">Contact Info</h5>
+                        <div>
+                            <ul class="footer-lists contacts">
+                                <li>
+                                    <i aria-hidden="true" class="fa fa-map-marker"></i>
+                                    Dublin, California
+                                </li> <br>
+                                <li>
+                                    <i aria-hidden="true" class="fa fa-phone m-r-15"></i>+1(925)-587-4330
+                                </li><br>
+                                <li><i aria-hidden="true" class="fa fa-envelope m-r-15"></i>pixiebotdesign@gmail.com
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!--footer end-->
+
+<!--copyright css start-->
+<div class="app2 copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="center-content">
+                    <div>
+                        <h6 class="copyright-text text-white">Copyright © 2023 Pixiebot Design Studio, All Right Reserved</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- copyright css end-->
