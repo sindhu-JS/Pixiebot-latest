@@ -7,15 +7,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
-// import { AboutComponent } from './About us/about.component';
 import { SharedModule } from './shared/shared.module';
-
-
+import { Lightbox } from 'ng-gallery/lightbox';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -27,7 +27,7 @@ import { SharedModule } from './shared/shared.module';
     RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })
 
   ],
-  providers: [],
+  providers: [Lightbox],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

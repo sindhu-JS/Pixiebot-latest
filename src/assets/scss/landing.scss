@@ -113,6 +113,15 @@ ul {
     list-style: none;
     display: inline-block;
   }
+  &.service li{
+    display: block;
+    padding: 7px 20px;
+    &.light {
+      color: #1160cc;
+      font-style: italic;
+      width: 330px;
+    }
+  }
 }
 .title {
   text-align: center;
@@ -1238,8 +1247,6 @@ Core Feature css start
     color: $white;
   }
 }
-
-
 /*************************
   Footer css start
 *************************/

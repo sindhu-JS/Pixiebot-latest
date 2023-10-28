@@ -492,6 +492,9 @@ section {
   &.test {
     display: block;
   }
+  .service-brief {
+    // line-height: 3.125rem;
+  }
 }
 .text-as-shadow{
   position: absolute;
@@ -1615,6 +1618,7 @@ download section end
     border-radius: 10px;
     transition: all 1s;
     text-align: center;
+    cursor: pointer;
     &:hover {
       .img-block {
         animation: scaleDisappear 0.3s;
@@ -1634,6 +1638,25 @@ download section end
             color: $white;
           }
         }
+      }
+    }
+    &.working {
+      height: 300px;
+      cursor: auto;
+      padding: 25px;
+      .feature-text {
+        text-transform: uppercase;
+        color: #1160cc;
+      }
+      p {
+        text-align: left;
+      }
+      .list {
+        bottom: 0;
+        font-size: 20px;
+        position: absolute;
+        width: 80%;
+        margin-bottom: 20px;
       }
     }
     .img-block {
@@ -4153,7 +4176,10 @@ music css end
   }
   &.about {
     .color-light {
-      color: #10266b;
+      color:#1160cc;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      
     }
     .border-container {
       margin: 15px 0;
@@ -4615,10 +4641,18 @@ wedding-theme css end
   }
   &.format {
     .experience-container {
-      min-height: 455px;
+      min-height: 85px;
+      display: flex;
+      align-items: center;
+      height: 150px;
+      justify-content: center;
+      border-right: #1160cc solid 4px;
       .exp-img {
         width: 630px;
         position: absolute;
+      }
+      h2 {
+        font-family: balboa-condensed, sans-serif;
       }
     }
     .girl-img-container {
@@ -7521,6 +7555,32 @@ event css end
 /*************************
 gym css start
 *************************/
+.service-header-bg {
+  background-image: url('../../images/agency/service/service.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 725px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  .section-row {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0;
+    h1 {
+      text-align: center;
+      font-size: 6.813rem;
+      color: #fff;
+      font-size: calc(22px + (60 - 19) * ((100vw - 300px) / (1920 - 300)));
+    }
+  }
+}
 .gym {
   h1, h2 {
     font-family: 'Poppins', sans-serif;
@@ -7645,12 +7705,27 @@ gym css start
         font-weight: 600;
         font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1920 - 300)));;
       }
+      h4 {
+        font-size: calc(18px + 2 * (100vw - 300px) / 1620);
+        text-align: left;
+        margin-top: 50px;
+        color: #1160cc;
+      }
     }
     .format-sub-text {
       margin-bottom: 45px;
       .about-para {
-        font-size: calc(13px + (16 - 9) * ((100vw - 300px) / (1920 - 300)));
+        font-size: calc(13px + (16 - 11) * ((100vw - 300px) / (1920 - 300)));
         letter-spacing: 0;
+        &.about-page-content {
+          font-size: calc(13px + 3 * (100vw - 300px) / 1620);
+          text-align: left;
+        }
+        span {
+          font-style: italic;
+          color: #1160cc;
+          text-decoration: underline;
+        }
       }
     }
     .icon-collection {
@@ -12795,7 +12870,7 @@ error css end
     background: url("../../images/portfolio/multiple-carousel/slide2.jpg");
   }
   .img5 {
-    background: url("../../images/portfolio/multiple-carousel/1.jpg");
+    background: url("../../images/portfolio/multiple-carousel/slide1.jpg");
   }
   .imgs-carousel {
     background-repeat: no-repeat;

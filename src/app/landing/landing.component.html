@@ -17,7 +17,7 @@
                             <div class="collapse navbar-collapse" id="scroll-spy">
                                 <ul class="navbar-nav mx-auto nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" #home (click)="active('home')" [ngClass]="{'active show': activeClass == 'home' }">Home</a>
+                                        <a class="nav-link active" #home >Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" (click)="active('about')" [ngClass]="{'active show': activeClass == 'about' }" >About Us</a>
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="service service-overlay text-center" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
+                <div class="service service-overlay text-center"[routerLink]="['/service']" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
                      data-tilt-perspective="500"
                      style="will-change: transform; transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
                     <div class="img-block">
@@ -149,7 +149,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="service service-overlay text-center" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
+                <div class="service service-overlay text-center" [routerLink]="['/service']" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
                      data-tilt-perspective="500"
                      style="will-change: transform; transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
                     <div class="img-block">
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="service service-overlay text-center" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
+                <div class="service service-overlay text-center" [routerLink]="['/service']" data-tilt="" data-tilt-max="6" data-tilt-speed="400"
                      data-tilt-perspective="500"
                      style="will-change: transform; transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
                     <div class="img-block">
@@ -196,7 +196,7 @@
                     <ng-container *ngFor="let data of portfolio">
                         <ng-template carouselSlide>
                             <div>
-                                <a [routerLink]="data.link" target="_blank">
+                                <a [routerLink]="['/portfolio']">
                                     <div class="port-img">
                                         <img [src]="data.img" class="img-fluid">
                                     </div>
@@ -231,7 +231,7 @@
                             <p class="p-light about-para">
                                 Welcome to Pixiebot Design Studio, where design meets innovation and creativity knows no bounds. We are not just another design agency; we are the embodiment of passion, expertise, and a vision for excellence.We are a proudly women-owned UX-UI design agency, with 12+ years of experience and a shared passion for design, we have embarked on a journey to make our mark in the ever-evolving world of digital experiences. </p>
                         </div><br><br>
-                        <a href="#" class=" btn btn-default btn-gradient text-white">view more</a>
+                        <a [routerLink]="['/aboutus']" class=" btn btn-default btn-gradient text-white">Learn more</a>
                     </div>
                 </div>
             </div>

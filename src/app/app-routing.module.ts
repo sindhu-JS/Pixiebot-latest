@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './About us/about.component';
+import { ServiceComponent } from './service/service.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 export const routes: Routes = [
   {
     path: '',
@@ -10,10 +13,20 @@ export const routes: Routes = [
   {
     path: 'landing',
     component: LandingComponent
+  },
+  {
+    path: 'aboutus',
+    component: AboutComponent
+  },
+  {
+    path: 'service',
+    component: ServiceComponent
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent
   }
-
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     // preloadingStrategy: PreloadAllModules,
