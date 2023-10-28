@@ -10,12 +10,14 @@ import { LandingComponent } from './landing/landing.component';
 import { SharedModule } from './shared/shared.module';
 import { Lightbox } from 'ng-gallery/lightbox';
 import { ServiceComponent } from './service/service.component';
+import { AboutComponent } from './About us/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    ServiceComponent
+    ServiceComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -53,10 +53,10 @@
                 <div class="col-12">
                     <div class="filter-container isotopeFilters">
                         <ul class="list-inline filter">
-                            <li><a (click)="openGallery('all')">All </a></li>
-                            <li><a (click)="openGallery('web')">Web Design</a></li>
-                            <li><a (click)="openGallery('brand')">Brand Design</a></li>
-                            <li><a (click)="openGallery('media')">Social Media Design</a></li>
+                            <li [ngClass]="{'active': customizer == 'all' }"><a (click)="openGallery('all')">All </a></li>
+                            <li [ngClass]="{'active': customizer == 'web'><a (click)="openGallery('web')">Web Design</a></li>
+                            <li [ngClass]="{'active': customizer == 'brand'><a (click)="openGallery('brand')">Brand Design</a></li>
+                            <li [ngClass]="{'active': customizer == 'media'><a (click)="openGallery('media')">Social Media Design</a></li>
                         </ul>
                     </div>
                 </div>
