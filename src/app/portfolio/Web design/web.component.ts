@@ -27,23 +27,11 @@ export class WebComponent implements OnInit {
 }
 const data = [
   {
-    srcUrl: 'assets/images/portfolio/1.jpg',
-    previewUrl: 'assets/images/portfolio/1.jpg'
+    srcUrl: '../assets/images/portfolio/imotion-logo.png',
+    previewUrl: '../assets/images/portfolio/imotion-logo.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/5.jpg',
-    previewUrl: 'assets/images/portfolio/5.jpg'
-  },
-  {
-    srcUrl: 'assets/images/portfolio/6.jpg',
-    previewUrl: 'assets/images/portfolio/6.jpg'
-  },
-  {
-    srcUrl: 'assets/images/portfolio/7.jpg',
-    previewUrl: 'assets/images/portfolio/7.jpg'
-  },
-  {
-    srcUrl: 'assets/images/portfolio/9.jpg',
-    previewUrl: 'assets/images/portfolio/9.jpg'
+    srcUrl: '../assets/images/portfolio/erickson-logo.png',
+    previewUrl: '../assets/images/portfolio/erickson-logo.png'
   }
 ]

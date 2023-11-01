@@ -29,19 +29,31 @@ export class BrandComponent implements OnInit {
 
 const data = [
   {
-    srcUrl: 'assets/images/portfolio/1.jpg',
-    previewUrl: 'assets/images/portfolio/1.jpg'
+    srcUrl: '../assets/images/portfolio/broucher-1.png',
+    previewUrl: '../assets/images/portfolio/broucher-1.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/6.jpg',
-    previewUrl: 'assets/images/portfolio/6.jpg'
+    srcUrl: '../assets/images/portfolio/broucher-2.png',
+    previewUrl: '../assets/images/portfolio/broucher-2.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/7.jpg',
-    previewUrl: 'assets/images/portfolio/7.jpg'
+    srcUrl: '../assets/images/portfolio/broucher.png',
+    previewUrl: '../assets/images/portfolio/broucher.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/9.jpg',
-    previewUrl: 'assets/images/portfolio/9.jpg'
+    srcUrl: '../assets/images/portfolio/cookiebox-1.png',
+    previewUrl: '../assets/images/portfolio/cookiebox-1.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/cookiebox-2.png',
+    previewUrl: '../assets/images/portfolio/cookiebox-2.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/cookiebox-3.png',
+    previewUrl: '../assets/images/portfolio/cookiebox-3.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/imotion-package.png',
+    previewUrl: '../assets/images/portfolio/imotion-package.png'
   }
 ]

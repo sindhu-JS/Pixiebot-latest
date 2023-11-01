@@ -11,13 +11,16 @@ import { SharedModule } from './shared/shared.module';
 import { Lightbox } from 'ng-gallery/lightbox';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './About us/about.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     ServiceComponent,
-    AboutComponent
+    AboutComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -26,6 +29,7 @@ import { AboutComponent } from './About us/about.component';
     HttpClientModule,
     CarouselModule,
     SharedModule,
+    CommonModule,
     RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })
 
   ],

@@ -14,10 +14,8 @@ export class PortfolioComponent implements OnInit {
   public url : any; 
   public customizer: any = "all"
   items: GalleryItem[];
- 
+
   imageData = data;
-
-
   constructor(private router: Router, public colorPicker : ColorScssService, private displayblock: ColorScssService, public gallery: Gallery, public lightbox: Lightbox) { 
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -25,7 +23,6 @@ export class PortfolioComponent implements OnInit {
       }
     });
   }
-
   ngOnInit() {
     this.colorPicker.setColorScheme('inner-page');
     this.items = this.imageData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
@@ -47,35 +44,51 @@ export class PortfolioComponent implements OnInit {
 
 const data = [
   {
-    srcUrl: 'assets/images/portfolio/1.jpg',
-    previewUrl: 'assets/images/portfolio/1.jpg'
+    srcUrl: '../assets/images/portfolio/imotion-logo.png',
+    previewUrl: '../assets/images/portfolio/imotion-logo.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/2.jpg',
-    previewUrl: 'assets/images/portfolio/2.jpg'
+    srcUrl: '../assets/images/portfolio/erickson-logo.png',
+    previewUrl: '../assets/images/portfolio/erickson-logo.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/3.jpg',
-    previewUrl: 'assets/images/portfolio/3.jpg'
+    srcUrl: '../assets/images/portfolio/broucher-1.png',
+    previewUrl: '../assets/images/portfolio/broucher-1.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/4.jpg',
-    previewUrl: 'assets/images/portfolio/4.jpg'
+    srcUrl: '../assets/images/portfolio/broucher-2.png',
+    previewUrl: '../assets/images/portfolio/broucher-2.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/5.jpg',
-    previewUrl: 'assets/images/portfolio/5.jpg'
+    srcUrl: '../assets/images/portfolio/broucher.png',
+    previewUrl: '../assets/images/portfolio/broucher.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/6.jpg',
-    previewUrl: 'assets/images/portfolio/6.jpg'
+    srcUrl: '../assets/images/portfolio/cookiebox-1.png',
+    previewUrl: '../assets/images/portfolio/cookiebox-1.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/7.jpg',
-    previewUrl: 'assets/images/portfolio/7.jpg'
+    srcUrl: '../assets/images/portfolio/cookiebox-2.png',
+    previewUrl: '../assets/images/portfolio/cookiebox-2.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/9.jpg',
-    previewUrl: 'assets/images/portfolio/9.jpg'
+    srcUrl: '../assets/images/portfolio/cookiebox-3.png',
+    previewUrl: '../assets/images/portfolio/cookiebox-3.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/imotion-package.png',
+    previewUrl: '../assets/images/portfolio/imotion-package.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/sephora.png',
+    previewUrl: '../assets/images/portfolio/sephora.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/ipsy1.png',
+    previewUrl: '../assets/images/portfolio/ipsy1.png'
+  },
+  {
+    srcUrl: '../assets/images/portfolio/ipsy2.png',
+    previewUrl: '../assets/images/portfolio/ipsy2.png'
   }
 ]

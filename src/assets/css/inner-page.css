@@ -1718,7 +1718,7 @@ body.menu-on:before {
     .copyright .link-horizontal ul li:last-child {
       padding-right: 0; }
   .copyright.app2 {
-    background: #f0665f; }
+    /* background: #f0665f; } */
     .copyright.app2 .copyright-text {
       font-weight: 300;
       letter-spacing: 1px; }

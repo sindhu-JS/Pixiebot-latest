@@ -30,31 +30,15 @@ export class MediaComponent implements OnInit {
 }
 const data = [
   {
-    srcUrl: 'assets/images/portfolio/Design Sephora.jpg',
-    previewUrl: 'assets/images/portfolio/Design Sephora.jpg'
+    srcUrl: '../assets/images/portfolio/sephora.png',
+    previewUrl: '../assets/images/portfolio/broucher-2.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/ipsy-1.jpg',
-    previewUrl: 'assets/images/portfolio/ipsy-1.jpg'
+    srcUrl: '../assets/images/portfolio/ipsy1.png',
+    previewUrl: '../assets/images/portfolio/ipsy1.png'
   },
   {
-    srcUrl: 'assets/images/portfolio/ipsy-2.jpg',
-    previewUrl: 'assets/images/portfolio/ipsy-2.jpg'
+    srcUrl: '../assets/images/portfolio/ipsy2.png',
+    previewUrl: '../assets/images/portfolio/ipsy2.png'
   },
-  {
-    srcUrl: 'assets/images/portfolio/ipsy-3.jpg',
-    previewUrl: 'assets/images/portfolio/ipsy-3.jpg'
-  },
-  {
-    srcUrl: 'assets/images/portfolio/ipsy-4.jpg',
-    previewUrl: 'assets/images/portfolio/ipsy-4.jpg'
-  },
-  {
-    srcUrl: 'assets/images/portfolio/ipsy-5.jpg',
-    previewUrl: 'assets/images/portfolio/ipsy-5.jpg'
-  },
-  {
-    srcUrl: 'assets/images/portfolio/ipsy-6.jpg',
-    previewUrl: 'assets/images/portfolio/ipsy-6.jpg'
-  }
 ]

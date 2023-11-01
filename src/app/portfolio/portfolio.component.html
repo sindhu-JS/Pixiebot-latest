@@ -49,54 +49,56 @@
 <section class="portfolio-section portfolio-metro zoom-gallery">
     <div class="filter-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="filter-container isotopeFilters">
-                        <ul class="list-inline filter">
-                            <li [ngClass]="{'active': customizer == 'all' }"><a (click)="openGallery('all')">All </a></li>
-                            <li [ngClass]="{'active': customizer == 'web'><a (click)="openGallery('web')">Web Design</a></li>
-                            <li [ngClass]="{'active': customizer == 'brand'><a (click)="openGallery('brand')">Brand Design</a></li>
-                            <li [ngClass]="{'active': customizer == 'media'><a (click)="openGallery('media')">Social Media Design</a></li>
+            <div class="p-3col-width">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="filter-container isotopeFilters">
+                            <ul class="list-inline filter">
+                                <li [ngClass]="{'active': customizer == 'all' }"><a (click)="openGallery('all')">All </a></li>
+                                <li [ngClass]="{'active': customizer == 'web' }"><a (click)="openGallery('web')">Web Design</a></li>
+                                <li [ngClass]="{'active': customizer == 'brand' }"><a (click)="openGallery('brand')">Brand Design</a></li>
+                                <li [ngClass]="{'active': customizer == 'media' }"><a (click)="openGallery('media')">Social Media Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="isotopeContainer row" gallerize>
+                    <ng-container *ngIf="customizer=='all'" >
+                        <figure class="p-width" itemprop="associatedMedia" *ngFor="let img of imageData">
+                            <a href="javascript:void(0)" itemprop="contentUrl">
+                            <img [src]="img.srcUrl" class="img-fluid" />
+                            </a>
+                        </figure>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='web'">
+                        <app-web class="w-100"></app-web>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='brand'">
+                        <app-brand class="w-100"></app-brand>
+                    </ng-container>
+                    <ng-container *ngIf="customizer=='media'">
+                        <app-media class="w-100"></app-media>
+                    </ng-container>
+                </div>
+                <!-- pagination Start -->
+                <div class="pagination_sec">
+                    <div class="content_detail__pagination cdp">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="javascript:void(0)" class="active cdp_i">1</a></li>
+                            <li><a href="javascript:void(0)" class="cdp_i">2</a></li>
+                            <li><a href="javascript:void(0)" class="cdp_i">3</a></li>
+                            <li><a href="javascript:void(0)" class="next"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
+                <!-- pagination End -->
             </div>
-            <div class="isotopeContainer row" gallerize>
-                <ng-container *ngIf="customizer=='all'" >
-                    <figure class="p-width" itemprop="associatedMedia" *ngFor="let img of imageData">
-                        <a href="javascript:void(0)" itemprop="contentUrl">
-                          <img [src]="img.srcUrl" class="img-fluid" />
-                        </a>
-                      </figure>
-                </ng-container>
-                <ng-container *ngIf="customizer=='web'">
-                    <app-web class="w-100"></app-web>
-                </ng-container>
-                <ng-container *ngIf="customizer=='brand'">
-                    <app-brand class="w-100"></app-brand>
-                </ng-container>
-                <ng-container *ngIf="customizer=='media'">
-                    <app-media class="w-100"></app-media>
-                </ng-container>
-            </div>
-            <!-- pagination Start -->
-            <div class="pagination_sec">
-                <div class="content_detail__pagination cdp">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-                        </li>
-                        <li><a href="javascript:void(0)" class="active cdp_i">1</a></li>
-                        <li><a href="javascript:void(0)" class="cdp_i">2</a></li>
-                        <li><a href="javascript:void(0)" class="cdp_i">3</a></li>
-                        <li><a href="javascript:void(0)" class="next"><i class="fa fa-angle-double-right"
-                                    aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- pagination End -->
+        </div>
     </div>
-  </div>
-  </section>
+</section>
 <!-- Portfolio end -->
 <!-- footer start -->
 <footer class="app2 bg footer2 p-0">
