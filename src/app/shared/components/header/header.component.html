@@ -1,0 +1,52 @@
+<!--top nav start-->
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="top-header">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#"><img src="assets/images/landing/PB_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="main-menu m-x-auto" id="nav">
+                        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#scroll-spy" aria-controls="scroll-spy" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="scroll-spy">
+                                <ul class="navbar-nav mx-auto nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" (click)="active('home')"
+                                            [ngClass]="{'active show': activeClass == 'home' }">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('about')"
+                                            [ngClass]="{'active show': activeClass == 'about' }">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('features')"
+                                            [ngClass]="{'active show': activeClass == 'features' }">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('portfolio')"
+                                            [ngClass]="{'active show': activeClass == 'portfolio' }">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" (click)="active('contact')"
+                                            [ngClass]="{'active show': activeClass == 'contact' }">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="purchase-block">
+                        <span class="cartpurchase"><i class="fa fa-phone"></i></span>
+                        <a class="purchase-btn" href="https://themeforest.net/user/pixelstrap/portfolio">Let's talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--top nav end-->

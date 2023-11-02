@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800);
 @import "/node_modules/bootstrap-scss/bootstrap.scss";
 @import "/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css";
-@import "/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css";         
+@import "/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css";
 @import 'swiper/scss';
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
@@ -19,4 +19,7 @@
 @import '/node_modules/ngx-toastr/toastr';
 @import './theme/responsive';
 @import 'theme/theme-dark';
-@import 'theme/theme-rtl'
+@import 'theme/theme-rtl';
+
+// Pagesy
+@import 'landing.scss';

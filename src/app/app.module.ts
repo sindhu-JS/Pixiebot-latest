@@ -10,9 +10,18 @@ import { LandingComponent } from './landing/landing.component';
 import { SharedModule } from './shared/shared.module';
 import { Lightbox } from 'ng-gallery/lightbox';
 import { ServiceComponent } from './service/service.component';
-import { AboutComponent } from './About us/about.component';
+import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CommonModule } from '@angular/common';
+import { MainSectionComponent } from './landing/main-section/main-section.component';
+import { ServiceSectionComponent } from './landing/service-section/service-section.component';
+import { PortfolioSectionComponent } from './landing/portfolio-section/portfolio-section.component';
+import { AboutSectionComponent } from './landing/about-section/about-section.component';
+import { ProgressSectionComponent } from './landing/progress-section/progress-section.component';
+import { TestimonialSectionComponent } from './landing/testimonial-section/testimonial-section.component';
+import { ContactSectionComponent } from './landing/contact-section/contact-section.component';
+import { GalleryModule } from 'ng-gallery';
+import { LightboxModule } from 'ng-gallery/lightbox';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,14 @@ import { CommonModule } from '@angular/common';
     LandingComponent,
     ServiceComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    MainSectionComponent,
+    ServiceSectionComponent,
+    PortfolioSectionComponent,
+    AboutSectionComponent,
+    ProgressSectionComponent,
+    TestimonialSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -30,8 +46,9 @@ import { CommonModule } from '@angular/common';
     CarouselModule,
     SharedModule,
     CommonModule,
-    RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })
-
+    RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+    GalleryModule,
+    LightboxModule
   ],
   providers: [Lightbox],
   bootstrap: [AppComponent]

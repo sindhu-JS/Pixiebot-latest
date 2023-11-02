@@ -1,0 +1,35 @@
+<!--portfolio start-->
+<section class="portfolio-section" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2>portfolio</h2>
+                    <hr class="bottom-border">
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="portfolioOptions" class="ecommerce-home-slider">
+                    <ng-container *ngFor="let data of portfolio">
+                        <ng-template carouselSlide>
+                            <div>
+                                <a [routerLink]="['/portfolio']">
+                                    <div class="port-img">
+                                        <img [src]="data.img" class="img-fluid">
+                                    </div>
+                                </a>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+    <div class="animat-potfolio">
+        <img src="assets/images/landing/animate-icon/sib-1.png" class="img-fluid port-sib">
+        <img src="assets/images/landing/animate-icon/round-2.png" class="img-fluid port-round">
+        <img src="assets/images/landing/animate-icon/ract.png" class="img-fluid port-ract">
+        <img src="assets/images/landing/animate-icon/squar.png" class="img-fluid port-squar">
+    </div>
+</section>
+<!--portfolio end-->

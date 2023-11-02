@@ -7,9 +7,8 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  public url : any; 
-
+  public url : any;
+  public activeClass = 'home';
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -20,5 +19,14 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  active(fragement: string) {
+    this.activeClass = fragement;
+    this.router.navigate(
+      ['/landing'],
+      { fragment: fragement }
+    );
+  }
+
 
 }
