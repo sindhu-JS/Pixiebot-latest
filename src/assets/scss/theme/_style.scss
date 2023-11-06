@@ -106,7 +106,7 @@ h1 {
   font-size: calc(22px + (50 - 22) * ((100vw - 300px) / (1920 - 300)));
   color: $white;
   font-weight: 400;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
   margin-top: -7px;
   margin-bottom: -20px;
   line-height: 1.4;
@@ -4747,7 +4747,7 @@ yoga-theme css end
   }
   h1 {
     font-size: calc(22px + (45 - 22) * ((100vw - 300px) / (1920 - 300)));
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
     margin-top: -17px;
     font-weight: 200;
     span {
@@ -5130,7 +5130,7 @@ yoga-theme css end
         }
       }
       .primary-border {
-        border-bottom: 4px solid $primary;
+        border-bottom: 4px solid #10266b;
         border-radius: 1px;
         width: 33px;
       }
@@ -7598,7 +7598,7 @@ gym css start
     font-weight: 500;
   }
   h2, h3, h4 {
-    color: $primary;
+    color: #10266b;
   }
   h5, h6, p {
     color: $secondary;

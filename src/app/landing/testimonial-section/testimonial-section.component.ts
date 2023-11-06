@@ -38,15 +38,15 @@ export class TestimonialSectionComponent {
 
   users = [
     { 
-      img:"assets/images/agency/testimonial/1.png",
-      name:"Kolan Motto",
-      designation:"CEO, Therat",
+      img:"assets/images/agency/testimonial/vs-logo.png",
+      name:"Sharmila Saravanan",
+      designation:"Founder, Vivid Spaces",
       review:"Amazing design studio! Their creativity, professionalism, and attention to detail surpassed our needs. Highly recommended!"
     },
     { 
-      img:"assets/images/agency/testimonial/2.png",
-      name:"Kolan Motto",
-      designation:"CEO, Therat",
+      img:"assets/images/agency/testimonial/sr-testi.png",
+      name:"Sivaranjani Ramkumar",
+      designation:"Founder, Siara Rental",
       review:"Our partnership with Pixiebot exceeded our expectations – their creativity and expertise transformed our online presence."
     },
     { 

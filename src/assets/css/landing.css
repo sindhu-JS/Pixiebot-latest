@@ -14,12 +14,12 @@ body {
 h1 {
 	font-size: calc(22px + (30 - 22) * ((100vw - 300px)/ (1920 - 300)));
 	margin-bottom: 0;
-	color: #8648db
+	color: #10266b;
 }
 
 h2 {
 	font-size: calc(20px + (32 - 20) * ((100vw - 300px)/ (1920 - 300)));
-	color: #8648db;
+	color: #10266b;
 	font-weight: 600
 }
 
@@ -93,7 +93,7 @@ ul li {
 	-webkit-text-fill-color: transparent;
 	letter-spacing: 1px; */
 	font-size: calc(20px + (45 - 20) * ((100vw - 300px)/ (1920 - 300)));
-	font-weight: 800
+	font-weight: 600
 }
 
 .title h6 {
@@ -219,7 +219,7 @@ header.sticky {
 }
 
 .purchase-block span {
-	background-color: #6e4dde;
+	background-color: #1160cc;
 	padding: 15px 20px;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px
