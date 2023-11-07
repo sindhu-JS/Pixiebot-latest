@@ -20,6 +20,7 @@ import { AboutSectionComponent } from './landing/about-section/about-section.com
 import { ProgressSectionComponent } from './landing/progress-section/progress-section.component';
 import { TestimonialSectionComponent } from './landing/testimonial-section/testimonial-section.component';
 import { ContactSectionComponent } from './landing/contact-section/contact-section.component';
+import { ClientSectionComponent } from './landing/client-section/client-section.component';
 import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
 
@@ -36,7 +37,8 @@ import { LightboxModule } from 'ng-gallery/lightbox';
     AboutSectionComponent,
     ProgressSectionComponent,
     TestimonialSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    ClientSectionComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

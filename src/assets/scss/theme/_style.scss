@@ -2575,7 +2575,7 @@ body {
   }
   .resume {
     .font-large {
-      font-size: 120%;
+      // font-size: 120%;
     }
   }
   .background-animate {
@@ -2948,7 +2948,7 @@ footer {
       }
     }
     li {
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
       color: $white;
       text-transform: capitalize;
       a {
@@ -2967,7 +2967,7 @@ footer {
     }
     &.contacts {
       li {
-        margin-bottom: 35px;
+        // margin-bottom: 35px;
         display: flex;
         line-height: 1.2;
         i {
@@ -4101,8 +4101,9 @@ music css end
   h1 {
     font-size: calc(22px + (70 - 22) * ((100vw - 300px) / (1920 - 300)));
     color: $primary;
-    margin-top: -20px;
+    margin-top: 20px;
     line-height: normal;
+    text-align: center;
   }
 
   h2 {
@@ -4153,7 +4154,7 @@ music css end
   }
   .center-text{
     > div{
-      margin-top: -30px;
+      // margin-top: -30px;
     }
   }
   &.pricing {
@@ -12800,7 +12801,7 @@ error css end
   display: none;
   z-index: 608;
   box-shadow: 0 3px 15px 3px rgba(46, 97, 220, 0.35);
-  overflow-Y: scroll;
+  overflow-y: scroll;
 }
 .parallex-section {
   .parallex-container {

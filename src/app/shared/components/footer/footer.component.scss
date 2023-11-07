@@ -1,0 +1,12 @@
+section {
+    padding: 40px 0 40px 0;
+    .footer-contant {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    footer .footer-lists.contacts li {
+        margin-bottom: 0;
+    }
+}

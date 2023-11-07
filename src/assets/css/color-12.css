@@ -10235,7 +10235,7 @@ error css end
   z-index: 608;
   -webkit-box-shadow: 0 3px 15px 3px rgba(46, 97, 220, 0.35);
           box-shadow: 0 3px 15px 3px rgba(46, 97, 220, 0.35);
-  overflow-Y: scroll; }
+  overflow-y: scroll; }
 
 .parallex-section .parallex-container {
   background-position: center;
@@ -13234,7 +13234,7 @@ header.ecommerce nav .top-header-right ul li.account .dropdown-menu {
     width: 350px;
     right: -350px;
     background: #fff;
-    overflow-Y: scroll;
+    overflow-y: scroll;
     height: 100vh;
     top: 0;
     padding: 0;

@@ -18,7 +18,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  *margin-right: .3em; }
+  margin-right: .3em; }
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
