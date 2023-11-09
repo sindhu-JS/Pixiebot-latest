@@ -12,6 +12,7 @@ import { Lightbox } from 'ng-gallery/lightbox';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 import { CommonModule } from '@angular/common';
 import { MainSectionComponent } from './landing/main-section/main-section.component';
 import { ServiceSectionComponent } from './landing/service-section/service-section.component';
@@ -30,6 +31,7 @@ import { LightboxModule } from 'ng-gallery/lightbox';
     LandingComponent,
     ServiceComponent,
     AboutComponent,
+    ContactComponent,
     PortfolioComponent,
     MainSectionComponent,
     ServiceSectionComponent,

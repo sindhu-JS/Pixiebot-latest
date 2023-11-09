@@ -10,3 +10,9 @@ section {
         margin-bottom: 0;
     }
 }
+@media only screen and (max-width: 767px) {
+    footer .footer-contant {
+        float: left;
+        padding: 20px 0;
+    }
+}

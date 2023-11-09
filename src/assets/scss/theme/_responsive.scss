@@ -4633,6 +4633,7 @@
   }
   footer .footer-title.mobile-title h3 {
     line-height: 1.4;
+    color: #fff;
   }
   .event{
     &.contact {
@@ -6872,7 +6873,7 @@
       }
     }
   }
-  .music .form-footer .form-group input, .music .form-footer .form-group textarea {
+  .music .form-footer .form-group input, .music .form-footer .form-group textarea, .music .form-footer .form-group select {
     padding: 12px 20px;
   }
   .music .form-footer .form-group {
@@ -7658,6 +7659,7 @@
     }
     .para2 {
       margin-bottom: 20px;
+      text-align: left;
     }
     &.video {
       .d-inline-block {

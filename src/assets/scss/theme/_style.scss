@@ -1992,7 +1992,7 @@ body {
 *************************/
 .copyright {
   padding: 18px 0;
-  background: $primary;
+  background: #10266b;
   .copyright-text {
     font-weight: 300;
     letter-spacing: 1px;
@@ -2037,7 +2037,7 @@ body {
     }
   }
   &.app2 {
-    background: #10266b;
+    // background: #10266b;
     .copyright-text {
       font-weight: 300;
       letter-spacing: 1px;
@@ -6917,7 +6917,7 @@ saas1 css end
     font-family: 'Poppins', sans-serif;
   }
   h2, h3, h4, h5 {
-    color: $primary;
+    color: #10266b;
   }
   h1 {
     margin-top: -14px;
@@ -6942,7 +6942,7 @@ saas1 css end
     font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
     margin-top: 0;
     margin-bottom: -3px;
-    color: $gray14;
+    color: #555555;
   }
   &.header {
     .center-text {
@@ -6975,7 +6975,7 @@ saas1 css end
     }
   }
   &.bg-gradient {
-    background-image: linear-gradient($light, $dark);
+    background-image: linear-gradient(#5574d845, #e9f0ff);
   }
   .title {
     .main-title {
@@ -7104,7 +7104,7 @@ saas1 css end
       .row {
         .service-container {
           &:nth-child(n+5) {
-            margin-top: 30px;
+            // margin-top: 30px;
           }
         }
       }
@@ -7409,7 +7409,7 @@ event css start
     }
     &::before {
       content: "";
-      background-image: linear-gradient($light, $dark);
+      background-image: url("/assets/images/landing/Contact Us.png");
       top: 0;
       opacity: 0.9;
       height: 100%;

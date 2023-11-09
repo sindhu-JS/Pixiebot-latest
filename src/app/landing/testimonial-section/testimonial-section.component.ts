@@ -49,15 +49,15 @@ export class TestimonialSectionComponent {
       designation:"Founder, Siara Rental",
       review:"Our partnership with Pixiebot exceeded our expectations – their creativity and expertise transformed our online presence."
     },
-    { 
-      img:"assets/images/agency/testimonial/1.png",
-      name:"Kolan Motto",
-      designation:"CEO, Therat",
-      review:"Impressed by Pixiebot's results-driven approach; they not only met but exceeded our digital marketing goals."
-    },
+    // { 
+    //   img:"assets/images/agency/testimonial/1.png",
+    //   name:"Kolan Motto",
+    //   designation:"CEO, Therat",
+    //   review:"Impressed by Pixiebot's results-driven approach; they not only met but exceeded our digital marketing goals."
+    // },
     { 
       img:"assets/images/agency/testimonial/2.png",
-      name:"Kolan Motto",
+      name:"Chaitra Bhat",
       designation:"CEO, Therat",
       review:"The Pixiebot's branding design surpassed our expectations, creatively capturing our essence and leaving a lasting impact on our audience."
     }

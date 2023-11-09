@@ -4,6 +4,7 @@ import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 export const routes: Routes = [
   {
     path: '',
@@ -25,6 +26,10 @@ export const routes: Routes = [
   {
     path: 'portfolio',
     component: PortfolioComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   }
 ];
 @NgModule({
