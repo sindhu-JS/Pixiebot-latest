@@ -1,8 +1,6 @@
 export interface Countries{
-  code: string
-  code3: string
+  abbreviation: string
   name: string
-  number: string
 }
 
 export interface Services {

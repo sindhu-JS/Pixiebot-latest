@@ -1531,8 +1531,8 @@ header.sticky {
 .btn-gradient:focus,
 .btn-gradient:hover {
 	background-color: transparent!important;
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, #ba38d2), color-stop(85%, #6851df));
-	background-image: linear-gradient(to right, #ba38d2 15%, #6851df 85%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, #1160cc), color-stop(85%, #1d40a9));
+	background-image: linear-gradient(to right, #1160cc 15%, #1d40a9 85%);
 	color: #fff
 }
 

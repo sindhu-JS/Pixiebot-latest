@@ -32,24 +32,24 @@
             <div class="col-xl-5 p-l-0 col-md-6 set-z-index form-footer">
                 <div class="bg-white">
 
-                    <form>
+                    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData)">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input [formControl]="name" type="text" class="form-control" id="name">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="Phone">Phone *</label>
-                                    <input type="text" class="form-control" id="Phone">
+                                    <input [formControl]="phone" type="text" class="form-control" id="Phone">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="Email">Email *</label>
-                                    <input type="text" class="form-control" id="Email">
+                                    <input [formControl]="email" type="text" class="form-control" id="Email">
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -64,7 +64,7 @@
                         </div>
                         <div class="form-group">
                             <label for="Message">Message *</label>
-                            <input type="text" class="form-control" id="Message">
+                            <input [formControl]="message" type="text" class="form-control" id="Message">
                         </div>
 
                         <a class="btn btn-default primary-btn m-0-auto event-btn ">send</a>

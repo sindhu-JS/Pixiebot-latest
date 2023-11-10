@@ -1619,6 +1619,7 @@ download section end
     transition: all 1s;
     text-align: center;
     cursor: pointer;
+    height: 100%;
     &:hover {
       .img-block {
         animation: scaleDisappear 0.3s;
@@ -1992,7 +1993,7 @@ body {
 *************************/
 .copyright {
   padding: 18px 0;
-  background: #10266b;
+  background: #10266b !important;
   .copyright-text {
     font-weight: 300;
     letter-spacing: 1px;

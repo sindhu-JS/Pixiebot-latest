@@ -18,10 +18,11 @@ section {
 }
 .header .center-text {
     height: 100%;
-    h3 {
+    h2 {
         margin: 30px auto 50px auto;
-        font-size: calc(18px + (25 - 14) * ((100vw - 300px) / (1920 - 300)));
-        line-height: 1.7;
+        // font-size: calc(18px + (25 - 14) * ((100vw - 300px) / (1920 - 300)));
+        // line-height: 1.7;
+        font-weight: 500;
     }
 }
 @media only screen and (max-width: 767px) {

@@ -56,9 +56,9 @@ export class TestimonialSectionComponent {
     //   review:"Impressed by Pixiebot's results-driven approach; they not only met but exceeded our digital marketing goals."
     // },
     { 
-      img:"assets/images/agency/testimonial/2.png",
-      name:"Chaitra Bhat",
-      designation:"CEO, Therat",
+      img:"assets/images/agency/testimonial/tringapps_logo.png",
+      name:"Karthik Kumaraswamy",
+      designation:"VP, TringApps Inc.",
       review:"The Pixiebot's branding design surpassed our expectations, creatively capturing our essence and leaving a lasting impact on our audience."
     }
   ]

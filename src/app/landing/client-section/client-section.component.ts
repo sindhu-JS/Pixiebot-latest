@@ -11,7 +11,7 @@ export class ClientSectionComponent implements OnInit {
   ngOnInit() {
   }
   brands = [
-    { img: "assets/images/app_landing2/brand/1.png" },
+    { img: "assets/images/agency/slider/tringapp.png" },
     { img: "assets/images/app_landing2/brand/2.png" },
     { img: "assets/images/app_landing2/brand/3.png" },
     { img: "assets/images/app_landing2/brand/4.png" },
