@@ -24,7 +24,10 @@ import { ContactSectionComponent } from './landing/contact-section/contact-secti
 import { ClientSectionComponent } from './landing/client-section/client-section.component';
 import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,18 +46,22 @@ import { LightboxModule } from 'ng-gallery/lightbox';
     ClientSectionComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule,
+    //BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     HttpClientModule,
     CarouselModule,
+    ReactiveFormsModule,
     SharedModule,
     CommonModule,
     RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
     GalleryModule,
-    LightboxModule
+    LightboxModule,
+    ToastModule,
+    InputTextareaModule
   ],
-  providers: [Lightbox],
+  providers: [Lightbox, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

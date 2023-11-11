@@ -1,38 +1,58 @@
 @import "../../assets/scss/landing.scss";
 section {
-    padding-top: 0;
-    margin-bottom: 50px;
-    .about-img {
-        align-items: center;
-        display: flex;
-        position: relative;
-        img {
-            position: relative;
-        }
+  padding-top: 0;
+  margin-bottom: 50px;
+  .about-img {
+    align-items: center;
+    display: flex;
+    position: relative;
+    img {
+      position: relative;
     }
-    p span {
-        color: #1160cc;
-        font-style: italic;
-        font-weight: 500;
-    }
+  }
+  p span {
+    color: #1160cc;
+    font-style: italic;
+    font-weight: 500;
+  }
 }
 .header .center-text {
-    height: 100%;
-    h3 {
-        margin: 30px auto 50px auto;
-        font-size: calc(18px + (25 - 14) * ((100vw - 300px) / (1920 - 300)));
-        line-height: 1.7;
-    }
+  height: 100%;
+  h3 {
+    margin: 30px auto 50px auto;
+    font-size: calc(18px + (25 - 14) * ((100vw - 300px) / (1920 - 300)));
+    line-height: 1.7;
+  }
 }
 @media only screen and (max-width: 767px) {
-    .header .center-text {
-        margin: 0;
-        height: auto;
-        padding: 0;
-    }
+  .header .center-text {
+    margin: 0;
+    height: auto;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 991px) {
-    .header .center-text {
-        margin: 0;
-    }
+  .header .center-text {
+    margin: 0;
+  }
+}
+
+.has-error input,
+.has-error select,
+.has-error textarea {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.email-thankyou {
+    height: 500px;
+}
+
+.message-textarea {
+    margin-top: 10px;
 }
