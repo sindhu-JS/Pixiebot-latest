@@ -12,7 +12,7 @@ export class ContactService {
 
   constructor(private http: HttpClient) {}
 
-  PostMessage(input: any) {
+  postMessage(input: any) {
     return this.http.post(this.mailApi, input, { responseType: 'text' }).pipe(
       map(
         (response: any) => {
