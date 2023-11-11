@@ -852,7 +852,7 @@ section {
     a {
       transition: 0.5s;
       img {
-        filter: brightness(0);
+        // filter: brightness(0);
         &.wedding-brand {
           filter: grayscale(100);
         }
@@ -863,6 +863,11 @@ section {
           filter: unset;
         }
       }
+    }
+    .owl-carousel .owl-stage {
+      align-items: center;
+      display: flex;
+      position: relative;
     }
   }
 }
@@ -3268,7 +3273,7 @@ booking section end
   }
   h2 {
     font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1920 - 300)));
-    color: $secondary;
+    color: #10266b;
     margin-top: -5px;
     margin-bottom: -17px;
   }
@@ -7057,13 +7062,13 @@ saas1 css end
     background-repeat: no-repeat;
     overflow: hidden;
     .set-center-div {
-      min-height: 555px;
+      min-height: 300px;
       position: relative;
       .side-img {
         position: absolute;
-        right: -14%;
+        right: 0%;
         height: unset;
-        top: 50%;
+        top: 45%;
         transform: translate(0, -50%);
       }
     }
@@ -7410,7 +7415,7 @@ event css start
     }
     &::before {
       content: "";
-      background-image: url("/assets/images/landing/Contact Us.png");
+      // background-image: url("/assets/images/landing/Contact Us.png");
       top: 0;
       opacity: 0.9;
       height: 100%;

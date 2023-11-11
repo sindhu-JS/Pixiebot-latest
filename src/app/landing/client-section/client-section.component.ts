@@ -12,8 +12,8 @@ export class ClientSectionComponent implements OnInit {
   }
   brands = [
     { img: "assets/images/agency/slider/tringapp.png" },
-    { img: "assets/images/app_landing2/brand/2.png" },
-    { img: "assets/images/app_landing2/brand/3.png" },
+    { img: "assets/images/agency/slider/dentalLogo.png" },
+    { img: "assets/images/agency/slider/picaggo-logo.png" },
     { img: "assets/images/app_landing2/brand/4.png" },
     { img: "assets/images/app_landing2/brand/5.png" }
   ]
