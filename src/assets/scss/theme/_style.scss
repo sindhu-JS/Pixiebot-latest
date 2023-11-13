@@ -745,10 +745,10 @@ section {
   &.btn-gradient {
     border: transparent;
     position: relative;
-    background-color: $dark;
-    background-image: linear-gradient($light, $dark);
-    background-image: -webkit-gradient(linear, left top, right top, from($light), color-stop($dark), color-stop($dark), to($light));
-    background-image: linear-gradient(to right, $light, $dark, $dark, $light);
+    // background-color: $dark;
+    // background-image: linear-gradient($light, $dark);
+    // background-image: -webkit-gradient(linear, left top, right top, from($light), color-stop($dark), color-stop($dark), to($light));
+    // background-image: linear-gradient(to right, $light, $dark, $dark, $light);
     transition: all .4s ease-in-out;
     background-size: 300% 100%;
     &:hover, &:focus, &:active {
@@ -868,6 +868,9 @@ section {
       align-items: center;
       display: flex;
       position: relative;
+    }
+    .owl-carousel .owl-item img {
+      width: auto;
     }
   }
 }
@@ -8070,6 +8073,7 @@ popup css start
     grid-gap: 2px;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
 
     > div {
       position: relative;

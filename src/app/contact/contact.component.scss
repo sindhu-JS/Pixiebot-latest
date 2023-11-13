@@ -40,11 +40,11 @@ section {
 .has-error input,
 .has-error select,
 .has-error textarea {
-  border: 1px solid red;
+  border: 1px solid #b32b23;
 }
 
 .error-message {
-  color: red;
+  color: #b32b23;
   font-size: 14px;
   margin-top: 5px;
 }
@@ -55,4 +55,8 @@ section {
 
 .message-textarea {
     margin-top: 10px;
+}
+.text-info {
+  color: #1160cc;
+  text-align: center;
 }

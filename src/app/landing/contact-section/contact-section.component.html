@@ -25,69 +25,69 @@
     </div>
     <section class="music bg-footer">
         <div class="container">
-            <!-- <div class="row">
-            <div class="col-sm-4">
-                <div class="contact-details text-center">
-                    <h4 class="contact-heading  ">Address</h4>
-                    <h6 class="contact-sub-text ">Dublin, CA</h6>
-                </div>
+            <div class="form form-footer p-t-50" *ngIf="!submitted">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('name')?.invalid && (contactForm.get('name')?.dirty || contactForm.get('name')?.touched) }">
+                                <input formControlName="name" type="text" placeholder="Name" id="name">
+                                <div class="error-message" *ngIf="contactForm.get('name')?.invalid && (contactForm.get('name')?.dirty || contactForm.get('name')?.touched)">
+                                    Field is required.
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched) }">
+                                <input formControlName="email" type="text" placeholder="Email" id="Email">
+                                <div class="error-message" *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)">
+                                    <span *ngIf="contactForm.get('email').hasError('required')">Field is required.</span>
+                                    <span *ngIf="contactForm.get('email').hasError('email')">Enter a valid email ID.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <select name="country" id="country">
+                                    <option value="" disabled selected>Select State</option>
+                                    <option *ngFor="let country of countries" [value]="country.name">{{country.name}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('services')?.invalid && (contactForm.get('services')?.dirty || contactForm.get('services')?.touched) }">
+                                <select name="service" id="service" formControlName="services">
+                                    <option value="" disabled selected>Select service</option>
+                                    <option *ngFor="let service of servicesProvided" [value]="service.name">{{service.name}}
+                                    </option>
+                                </select>
+                                <div class="error-message" *ngIf="contactForm.get('services')?.invalid && (contactForm.get('services')?.dirty || contactForm.get('services')?.touched)">
+                                    Field is required.
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched) }">
+                                <textarea class="form-control" formControlName="message" rows="6"
+                                    placeholder="Please provide details about your project, including description and timeline." pInputTextarea [autoResize]="true"></textarea>
+                                    <div class="error-message"
+                                    *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)">
+                                    Field is required.
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-gradient text-white">Send</button>
+                    </div>
+                </form>
             </div>
-            <div class="col-sm-4">
-                <div class="contact-details text-center">
-                    <h4 class="contact-heading  ">Call Us </h4>
-                    <h6 class="contact-sub-text">(925)-587-4330</h6>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="contact-details text-center">
-                    <h4 class="contact-heading ">Email Us</h4>
-                    <h6 class="contact-sub-text">pixiebotdesign@gmail.com</h6>
-                </div>
-            </div>
-        </div> -->
-            <div class="form form-footer p-t-50">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select name="country" id="country">
-                                <option value="" disabled selected>Select State</option>
-                                <option *ngFor="let country of countries" [value]="country.name">{{country.name}}
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select name="service" id="serviceType">
-                                <option value="" disabled selected>Select service</option>
-                                <option *ngFor="let service of services" [value]="service.name">{{service.name}}
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="6"
-                                placeholder="Please provide details about your project, including description and timeline."></textarea>
-                        </div>
-                    </div>
-                    <div class="booking">
-                        <a href="#" class=" btn btn-default btn-gradient text-white">Submit</a>
-                    </div>
+            <div class="col-xl-5 p-l-0 col-md-6 set-z-index form-footer" *ngIf="submitted">
+                <div class="bg-white email-thankyou">
+                    <h3 class="text-info">Thank you for submitting your contact information! We will get back to you as soon as possible.</h3>
                 </div>
             </div>
         </div>
     </section>
-
+    <img src="assets/images/event/footer/2.png" alt="" class="set-abs top-0 plane2">
+    <img src="assets/images/event/footer/1.png" alt="" class="set-abs bottom-0 plane">
 </section>
 <!-- Contact form end -->

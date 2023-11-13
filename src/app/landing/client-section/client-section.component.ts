@@ -14,8 +14,8 @@ export class ClientSectionComponent implements OnInit {
     { img: "assets/images/agency/slider/tringapp.png" },
     { img: "assets/images/agency/slider/dentalLogo.png" },
     { img: "assets/images/agency/slider/picaggo-logo.png" },
-    { img: "assets/images/app_landing2/brand/4.png" },
-    { img: "assets/images/app_landing2/brand/5.png" }
+    { img: "assets/images/agency/slider/eatery.png" },
+    { img: "assets/images/agency/slider/imotionLogo.png" }
   ]
   
   brandcarouselOptions= {
