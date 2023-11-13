@@ -2,12 +2,12 @@ const FtpDeploy = require("ftp-deploy");
 const ftpDeploy = new FtpDeploy();
 const serverUrl = " https://www.thepixiebot.com";
 const config = {
-  user: "devpixiebotuser",
-  password: "$4t2i8Nb8",
+  user: "pixiebotuser",
+  password: "2mQBzPSdyN2vKW6",
   host: "50.63.9.40",
   port: 21, // default FTP port
   localRoot: __dirname + "/dist", // the path to your build files
-  remoteRoot: "/yourdev", // the remote FTP directory
+  remoteRoot: "", // the remote FTP directory
   include: ["*", "**/*"], // include all files and subdirectories
   deleteRemote: true, // delete existing files on the remote server
 };
