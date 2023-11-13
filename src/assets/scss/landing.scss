@@ -202,9 +202,9 @@ header {
 .navbar-light {
   .navbar-nav {
     .nav-link {
-      color: #10266b !important;
+      color: #10266b;
       &:hover {
-        color: #1160cc !important;
+        color: #1160cc;
         transition: all 0.5s ease;
       }
     }
@@ -213,7 +213,7 @@ header {
         text-transform: uppercase;
         font-weight: 500;
         &.active {
-          color: #10266b;
+          color: #1160cc;
           transition: all 0.5s ease;
         }
       }

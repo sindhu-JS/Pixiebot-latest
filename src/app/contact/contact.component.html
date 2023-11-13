@@ -1,16 +1,3 @@
-<!-- <section class="p-b-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title title2 title-inner">
-                    <div class="main-title">
-                        <h2 class="font-primary borders text-center main-text text-uppercase m-b-0"><span>contact 1</span></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 <footer class="event contact set-relative bg bg-img bg-about p-b-0 " id="contact">
     <div class="container p-b-100">
         <div class="row">
@@ -32,70 +19,8 @@
                         class="img-fluid bottom-0 right-0">
                 </div>
             </div>
-            <div class="col-xl-5 p-l-0 col-md-6 set-z-index form-footer" *ngIf="!submitted">
-                <div class="bg-white">
-                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('name')?.invalid && (contactForm.get('name')?.dirty || contactForm.get('name')?.touched) }">
-                                    <label for="name">Name *</label>
-                                    <input formControlName="name" type="text" class="form-control" id="name">
-                                    <div class="error-message" *ngIf="contactForm.get('name')?.invalid && (contactForm.get('name')?.dirty || contactForm.get('name')?.touched)">
-                                        Field is required.
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('phone')?.invalid && (contactForm.get('phone')?.dirty || contactForm.get('phone')?.touched) }">
-                                    <label for="Phone">Phone *</label>
-                                    <input formControlName="phone" type="text" class="form-control" id="Phone">
-                                    <div class="error-message" *ngIf="contactForm.get('phone')?.invalid && (contactForm.get('phone')?.dirty || contactForm.get('phone')?.touched)">
-                                        Field is required.
-                                      </div>
-                                      <small class="form-text text-muted">Please enter a valid phone number with country code.</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched) }">
-                                    <label for="Email">Email *</label>
-                                    <input formControlName="email" type="text" class="form-control" id="Email">
-                                    <div class="error-message" *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)">
-                                        <span *ngIf="contactForm.get('email').hasError('required')">Field is required.</span>
-                                        <span *ngIf="contactForm.get('email').hasError('email')">Enter a valid email ID.</span>
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('services')?.invalid && (contactForm.get('services')?.dirty || contactForm.get('services')?.touched) }">
-                                    <label for="service">Select service *</label>
-                                    <select id="service" class="form-control" formControlName="services">
-                                        <option *ngFor="let service of servicesProvided" [value]="service.name">{{
-                                            service.name }}</option>
-                                    </select>
-                                    <div class="error-message" *ngIf="contactForm.get('services')?.invalid && (contactForm.get('services')?.dirty || contactForm.get('services')?.touched)">
-                                        Field is required.
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group" [ngClass]="{ 'has-error': contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched) }">
-                            <label for="Message">Message *</label>
-                            <textarea formControlName="message" rows="5" cols="30" pInputTextarea [autoResize]="true" class="message-textarea"></textarea>
-                            <!-- <input formControlName="message" type="text" class="form-control" id="Message"> -->
-                            <div class="error-message"
-                                *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)">
-                                Field is required.
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-default btn-gradient text-white">Send</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-xl-5 p-l-0 col-md-6 set-z-index form-footer" *ngIf="submitted">
-                <div class="bg-white email-thankyou">
-                <h3 class="text-info">Thank you for submitting your contact information!<br><br> We will get back to you as soon as possible.</h3>
-            </div>
+            <div class="col-xl-5 p-l-0 col-md-6 set-z-index form-footer">
+                <app-contact-us></app-contact-us>
             </div>
         </div>
     </div>
