@@ -43,12 +43,6 @@ export class LandingComponent implements OnInit {
     document.querySelector(`#${val}`).scrollIntoView({behavior: 'smooth' });
   }
 
-
-
-
-
-
-
   testimonialOptions = {
     items: 1,
     nav: false,

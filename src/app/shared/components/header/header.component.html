@@ -5,7 +5,7 @@
             <div class="col">
                 <div class="top-header">
                     <div class="logo">
-                        <a class="navbar-brand" href="#"><img src="assets/images/landing/pb_logo_new.png" alt="logo"></a>
+                        <a class="navbar-brand" href="#"><img src="assets/images/landing/Pb-logo-new.png" alt="logo"></a>
                     </div>
                     <div class="main-menu m-x-auto" id="nav">
                         <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light">
@@ -17,20 +17,19 @@
                             <div class="collapse navbar-collapse" id="scroll-spy">
                                 <ul class="navbar-nav mx-auto nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" (click)="active('home')"
-                                            [ngClass]="{'active show': activeClass == 'home' }">Home</a>
+                                      <a class="nav-link" [routerLink]="['/landing']" routerLinkActive="active">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" [routerLink]="['/aboutus']">About Us</a>
+                                        <a class="nav-link"  [routerLink]="['/aboutus']" routerLinkActive="active">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" [routerLink]="['/service']">Services</a>
+                                        <a class="nav-link"  [routerLink]="['/service']" routerLinkActive="active">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" [routerLink]="['/portfolio']">Portfolio</a>
+                                        <a class="nav-link" [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+                                        <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active">Contact</a>
                                     </li>
                                 </ul>
                             </div>

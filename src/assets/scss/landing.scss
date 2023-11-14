@@ -170,7 +170,7 @@ ul {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 20px 0;
+  // padding: 20px 0;
   .logo {
     margin-left: 50px;
     .navbar-brand {
@@ -202,9 +202,9 @@ header {
 .navbar-light {
   .navbar-nav {
     .nav-link {
-      color: $header-link;
+      color: #10266b;
       &:hover {
-        color: #10266b;
+        color: #1160cc;
         transition: all 0.5s ease;
       }
     }
@@ -213,7 +213,7 @@ header {
         text-transform: uppercase;
         font-weight: 500;
         &.active {
-          color: #10266b;
+          color: #1160cc;
           transition: all 0.5s ease;
         }
       }
@@ -1087,6 +1087,7 @@ Core Feature css start
     grid-gap: 2px;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
 
     > div {
       position: relative;

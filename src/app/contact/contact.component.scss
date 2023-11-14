@@ -1,4 +1,3 @@
-@import "../../assets/scss/landing.scss";
 section {
   padding-top: 0;
   margin-bottom: 50px;
@@ -37,22 +36,3 @@ section {
   }
 }
 
-.has-error input,
-.has-error select,
-.has-error textarea {
-  border: 1px solid red;
-}
-
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.email-thankyou {
-    height: 500px;
-}
-
-.message-textarea {
-    margin-top: 10px;
-}

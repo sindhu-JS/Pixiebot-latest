@@ -1,5 +1,6 @@
 <!-- Contact form start -->
-<section class=" bg-light-inner" id="contact">
+
+<section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -25,69 +26,10 @@
     </div>
     <section class="music bg-footer">
         <div class="container">
-            <!-- <div class="row">
-            <div class="col-sm-4">
-                <div class="contact-details text-center">
-                    <h4 class="contact-heading  ">Address</h4>
-                    <h6 class="contact-sub-text ">Dublin, CA</h6>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="contact-details text-center">
-                    <h4 class="contact-heading  ">Call Us </h4>
-                    <h6 class="contact-sub-text">(925)-587-4330</h6>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="contact-details text-center">
-                    <h4 class="contact-heading ">Email Us</h4>
-                    <h6 class="contact-sub-text">pixiebotdesign@gmail.com</h6>
-                </div>
-            </div>
-        </div> -->
-            <div class="form form-footer p-t-50">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select name="country" id="country">
-                                <option value="" disabled selected>Select State</option>
-                                <option *ngFor="let country of countries" [value]="country.name">{{country.name}}
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select name="service" id="serviceType">
-                                <option value="" disabled selected>Select service</option>
-                                <option *ngFor="let service of services" [value]="service.name">{{service.name}}
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="6"
-                                placeholder="Please provide details about your project, including description and timeline."></textarea>
-                        </div>
-                    </div>
-                    <div class="booking">
-                        <a href="#" class=" btn btn-default btn-gradient text-white">Submit</a>
-                    </div>
-                </div>
-            </div>
+            <app-contact-us></app-contact-us>
         </div>
     </section>
-
+    <img src="assets/images/event/footer/2.png" alt="" class="set-abs top-0 plane2">
+    <img src="assets/images/event/footer/1.png" alt="" class="set-abs bottom-0 plane">
 </section>
 <!-- Contact form end -->

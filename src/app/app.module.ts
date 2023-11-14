@@ -55,7 +55,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
     ReactiveFormsModule,
     SharedModule,
     CommonModule,
-    RouterModule.forRoot(routes, { useHash: false, anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+    RouterModule,
     GalleryModule,
     LightboxModule,
     ToastModule,

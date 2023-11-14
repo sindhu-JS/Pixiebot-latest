@@ -10,7 +10,7 @@ import { Lightbox } from 'ng-gallery/lightbox';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  public activeClass = 'home';
+  public activeClass = 'portfolio';
   public url : any;
   public customizer: ProjectType = ProjectType.All;
   items: GalleryItem[];
