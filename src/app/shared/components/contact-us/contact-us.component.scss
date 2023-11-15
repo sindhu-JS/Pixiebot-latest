@@ -18,6 +18,11 @@
     margin-top: 10px;
 }
 .text-info {
-  color: #1160cc;
+  color: #1160cc !important;
   text-align: center;
+  margin-top: 3rem;
+}
+label {
+  font-size: calc(13px + (18 - 15) * ((100vw - 300px) / (1920 - 300)));
+  color: #10266b;
 }
