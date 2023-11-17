@@ -2402,44 +2402,6 @@ body {
     transform: translate(-50%, 0);
     z-index: 2;
   }
-  .wave-orange {
-    position: absolute;
-    bottom: 0;
-    width: 326px;
-    -webkit-animation: move-img 10s linear infinite;
-    animation: move-img 10s linear infinite;
-    background-image: url('../../images/wave-orange.png');
-    height: 34px;
-    background-size: contain;
-    left: 50%;
-    transform: translate(-50%, 0);
-    animation-delay: 0.55s;
-    z-index: 3;
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 326px;
-      -webkit-animation: move-img-reverse 10s linear infinite;
-      animation: move-img-reverse 10s linear infinite;
-      background-image: url('../../images/wave-orange.png');
-      height: 34px;
-      opacity: 0.4;
-      background-size: contain;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      opacity: 0.4;
-      width: 326px;
-      -webkit-animation: move-img 40s linear infinite;
-      animation: move-img 40s linear infinite;
-      background-image: url('../../images/wave-orange.png');
-      height: 34px;
-      background-size: contain;
-    }
-  }
   .event-content {
     .timer {
       display: flex;
@@ -2959,7 +2921,7 @@ footer {
     li {
       // margin-bottom: 10px;
       color: $white;
-      text-transform: capitalize;
+      // text-transform: capitalize;
       a {
         font-weight: 300;
         color: $white;
@@ -7566,7 +7528,7 @@ event css end
 gym css start
 *************************/
 .service-header-bg {
-  background-image: url('../../images/agency/service/service.jpg');
+  // background-image: url('../../images/agency/service/service.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   height: 725px;
@@ -8283,7 +8245,7 @@ breadcrumb-section css start
 .breadcrumb-section{
 
   &:not(.breadcrumb-left),&:not(.breadcrumb-right),&:not(.breadcrumb-slider){
-    background: url("../../images/inner-page/breadcrumb.jpg");
+    // background: url("../../images/inner-page/breadcrumb.jpg");
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -8302,7 +8264,7 @@ breadcrumb-section css start
     background: linear-gradient(200deg, $light, $dark);
   }
   &.bg1 {
-    background: url("../../images/inner-page/breadcrumb-bg.jpg");
+    // background: url("../../images/inner-page/breadcrumb-bg.jpg");
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -8436,7 +8398,7 @@ breadcrumb-section css start
     }
     .img-slider {
       .bg1 {
-        background: url("../../images/inner-page/breadcrumb-bg.jpg");
+        // background: url("../../images/inner-page/breadcrumb-bg.jpg");
         height: 60vh;
         background-size: cover;
         background-position: center;
@@ -8445,7 +8407,7 @@ breadcrumb-section css start
         background-color: #00000094;
       }
       .bg2 {
-        background: url("../../images/inner-page/blogs/size.jpg");
+        // background: url("../../images/inner-page/blogs/size.jpg");
         height: 60vh;
         background-size: cover;
         background-position: center;
@@ -8454,7 +8416,7 @@ breadcrumb-section css start
         background-color: #00000094;
       }
       .bg3 {
-        background: url("../../images/inner-page/breadcrumb-bg.jpg");
+        // background: url("../../images/inner-page/breadcrumb-bg.jpg");
         height: 60vh;
         background-size: cover;
         background-position: center;
@@ -8463,7 +8425,7 @@ breadcrumb-section css start
         background-color: #00000094;
       }
       .bg4 {
-        background: url("../../images/inner-page/blogs/size.jpg");
+        // background: url("../../images/inner-page/blogs/size.jpg");
         height: 60vh;
         background-size: cover;
         background-position: center;
@@ -12953,7 +12915,7 @@ error css end
   }
 }
 .maintenance-sec {
-  background: url("../../images/inner-page/maintain-soon/bg-maintenance.jpg");
+  // background: url("../../images/inner-page/maintain-soon/bg-maintenance.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
