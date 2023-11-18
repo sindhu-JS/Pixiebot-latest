@@ -11,7 +11,6 @@ export class MenuComponent implements OnInit {
   public openSide : boolean = false;
   public activeItem: string = 'home';
   public active: boolean = false;
-  public activeChildItem : string = '' 
   public overlay: boolean = false;
   
   constructor( public navServices: NavService) { }
@@ -42,19 +41,4 @@ export class MenuComponent implements OnInit {
   isActive(item){
     return this.activeItem === item 
   }
-
-  // For Active Child Menu in Mobile View
-  setChildActive(subMenu){
-    if (this.activeChildItem === subMenu) {
-      this.activeChildItem = ''
-    } else {
-      this.activeChildItem = subMenu
-    }
-  }
-
-  ischildActive(subMenu){
-    return this.activeChildItem === subMenu 
-  }
-
-
 }
